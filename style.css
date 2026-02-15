@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(-45deg, #2563eb, #9333ea, #0ea5e9, #6366f1);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content span {
+    color: #ffd700;
+}
+
+.hero-content h2 {
+    margin: 10px 0;
+    font-weight: 400;
+    min-height: 40px;
+}
+
+.hero button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px white;
+}
+
+/* Floating icons */
+
+.floating-icons span {
+    position: absolute;
+    font-size: 24px;
+    animation: float 6s infinite ease-in-out;
+}
+
+.floating-icons span:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.floating-icons span:nth-child(2) {
+    top: 70%;
+    left: 15%;
+}
+
+.floating-icons span:nth-child(3) {
+    top: 30%;
+    right: 10%;
+}
+
+.floating-icons span:nth-child(4) {
+    bottom: 20%;
+    right: 15%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.section {
+    padding: 60px 40px;
+    text-align: center;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-grid span {
+    background: #e5e7eb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill {
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.skill i {
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+.skill:hover {
+    transform: scale(1.2) rotate(5deg);
+}
