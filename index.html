@@ -26,19 +26,16 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span>YogiSri</span></h1>
+            <h1>Hi, I'm <span>YogiSri 👋</span></h1>
             <h2 id="typing"></h2>
             <p id="animated-text"></p>
             <button onclick="scrollToSection('projects')">
                 View My Work
-            </button>
-        </div>
+            </button><br><br>
+            <div class="hero-gif">
+                <img src="image.png" alt="Female developer animation">
+            </div>
 
-        <div class="floating-icons">
-            <span>⚡</span>
-            <span>💻</span>
-            <span>🚀</span>
-            <span>✨</span>
         </div>
     </section>
 
@@ -144,31 +141,61 @@
         <h2>Projects</h2>
 
         <div class="project-card">
-            <h3>Movie Collection App</h3>
-            <p>
-                React + Vite app for browsing movies with responsive UI
-                and interactive features.
-            </p>
-            <a href="https://github.com/YOGISRI/movies-collection" target="_blank">View Code</a>
-        </div>
 
-        <div class="project-card">
-            <h3>Airline Data Insights (Qlik)</h3>
-            <p>
-                Data visualization dashboard converting raw airline data
-                into actionable insights using Qlik.
-            </p>
-            <a href="https://github.com/YOGISRI/Exploring-Insights-" target="_blank">View Project</a>
-        </div>
+            <img src="movie-project.png" alt="Movie App Screenshot" class="project-img" height="250px">
 
+            <div class="project-content">
+                <h3>Movie Collection App</h3>
+
+                <p>
+                <ul>
+                    <li>Built a movie collection web application using React and Vite, demonstrating hands-on experience
+                        in modern frontend development with component-based UI.</li>
+                    <li>Implemented core features for browsing, displaying, and interacting with movies using
+                        JavaScript,
+                        HTML, and CSS, showcasing practical skills in responsive and user-centric design.</li>
+                    <li>The project reflects ability to configure and manage frontend tooling (Vite, ESLint) and
+                        understand essential build processes in real-world web apps.</li>
+                </ul>
+                </p>
+
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>API</span>
+                </div>
+
+                <a href="https://github.com/YOGISRI/movies-collection" target="_blank">
+                    Github
+                </a>
+
+            </div>
+
+        </div>
     </section>
+
 
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: medisettyyogisri@gmail.com</p>
-        <p>GitHub: github.com/YOGISRI</p>
-        <p>Location: Andhra Pradesh, India</p>
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-links">
+            <a href="mailto:medisettyyogisri@gmail.com">📧 Email</a>
+            <a href="https://github.com/YOGISRI" target="_blank">💻 GitHub</a>
+            <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+        </div>
+
+        <p id="successMsg"></p>
     </section>
+
 
     <footer>
         <p>© 2026 YogiSri Medisetti | Portfolio</p>
