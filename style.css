@@ -286,66 +286,59 @@ footer {
     }
 }
 
-.contact-form {
-    max-width: 500px;
-    margin: 20px auto;
+.contact-card {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 8px #2563eb;
-}
-
-.contact-form button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    transform: scale(1.05);
-    background: #1d4ed8;
-}
-
-.contact-links {
-    margin-top: 20px;
+.contact-item {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contact-links a {
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: #f3f4f6;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
+    color: #111;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 20px;
     color: #2563eb;
-    transition: 0.3s;
 }
 
-.contact-links a:hover {
-    color: #1d4ed8;
+.contact-item:hover {
+    transform: scale(1.05);
+    background: #e0e7ff;
 }
 
-#successMsg {
+.project-buttons {
     margin-top: 15px;
-    color: green;
-    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.btn-code {
+    background: #111;
+    color: white;
+}
+
+.btn-code:hover {
+    background: #333;
+    transform: translateY(-2px);
 }
